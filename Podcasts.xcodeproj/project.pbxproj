@@ -16,6 +16,8 @@
 		8E2E285C26F4A30C00E55DC2 /* PodcastsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E285B26F4A30C00E55DC2 /* PodcastsTests.swift */; };
 		8E2E286726F4A30C00E55DC2 /* PodcastsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E286626F4A30C00E55DC2 /* PodcastsUITests.swift */; };
 		8E2E287826F4A32100E55DC2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E287726F4A32100E55DC2 /* MainTabBarController.swift */; };
+		8E2E28A326F4DD0600E55DC2 /* PodcastsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E28A226F4DD0600E55DC2 /* PodcastsSearchController.swift */; };
+		8E2E28A926F4DD6600E55DC2 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E28A826F4DD6600E55DC2 /* Podcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8E2E286626F4A30C00E55DC2 /* PodcastsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsUITests.swift; sourceTree = "<group>"; };
 		8E2E286826F4A30C00E55DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E2E287726F4A32100E55DC2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8E2E28A226F4DD0600E55DC2 /* PodcastsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsSearchController.swift; sourceTree = "<group>"; };
+		8E2E28A826F4DD6600E55DC2 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		8E2E284326F4A30A00E55DC2 /* Podcasts */ = {
 			isa = PBXGroup;
 			children = (
+				8E2E28A726F4DD5B00E55DC2 /* Models */,
+				8E2E289626F4D99A00E55DC2 /* Controllers */,
 				8E2E284426F4A30A00E55DC2 /* AppDelegate.swift */,
 				8E2E284626F4A30A00E55DC2 /* SceneDelegate.swift */,
 				8E2E284826F4A30A00E55DC2 /* ViewController.swift */,
@@ -129,6 +135,22 @@
 				8E2E286826F4A30C00E55DC2 /* Info.plist */,
 			);
 			path = PodcastsUITests;
+			sourceTree = "<group>";
+		};
+		8E2E289626F4D99A00E55DC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E2E28A226F4DD0600E55DC2 /* PodcastsSearchController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E2E28A726F4DD5B00E55DC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E2E28A826F4DD6600E55DC2 /* Podcast.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +285,9 @@
 			files = (
 				8E2E284926F4A30A00E55DC2 /* ViewController.swift in Sources */,
 				8E2E284526F4A30A00E55DC2 /* AppDelegate.swift in Sources */,
+				8E2E28A926F4DD6600E55DC2 /* Podcast.swift in Sources */,
 				8E2E287826F4A32100E55DC2 /* MainTabBarController.swift in Sources */,
+				8E2E28A326F4DD0600E55DC2 /* PodcastsSearchController.swift in Sources */,
 				8E2E284726F4A30A00E55DC2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
