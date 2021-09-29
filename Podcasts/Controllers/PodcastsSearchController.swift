@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PocastsSearchController: UITableViewController, UISearchBarDelegate {
     
@@ -44,6 +45,17 @@ class PocastsSearchController: UITableViewController, UISearchBarDelegate {
         print(searchText)
         
         // TODO: implement Alamofire to search iTunes API
+        let url = "https://yahoo.com"
+        AF.request(url).response { (dataResponse) in
+            if let error = dataResponse.error {
+                print("Could not get a response", error)
+                return
+            }
+            
+            guard let data = dataResponse.data else { return }
+            let dummyString = String(data: data, encoding: .utf8)
+            print(dummyString ?? "")
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
